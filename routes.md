@@ -6,3 +6,7 @@
 - [Hello world! Trần Văn A](#test-post-1.md)
 - [Third Post With azeroth-js!](#third-post.md)
 - [Hello world! Trần Văn B](#test-post-2.md)
+- [Markdown Test Page](#lorem-ipsum.md)
+- [Hello world! Trần Văn B](#test-post-2.md)
+- [Hello world! Trần Văn A](#test-post-1.md)
+- [Third Post With azeroth-js!](#third-post.md)
