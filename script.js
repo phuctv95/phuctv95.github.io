@@ -71,3 +71,9 @@ function startOrStop() {
         interval = setInterval(doTheIntervalJob, 1000);
     }
 }
+
+function handleKeyPressInInput(event) {
+    if (event.keyCode == 13) {
+        startOrStop();
+    }
+}
