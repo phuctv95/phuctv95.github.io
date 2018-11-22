@@ -2,6 +2,11 @@ var isCounting = false;
 var interval = null;
 var totalSecs = 0;
 var audio = new Audio('Alarm-tone.mp3');
+var minTemplate = [10, 15, 30, 45];
+
+window.onload = function() {
+    enableAllTemplateInputs();
+}
 
 function playAlarm() {
     audio.loop = true;
@@ -17,12 +22,32 @@ function enableAllInputs() {
     document.getElementById("hours").disabled = false;
     document.getElementById("mins").disabled = false;
     document.getElementById("secs").disabled = false;
+    enableAllTemplateInputs();
 }
 
 function disableAllInputs() {
     document.getElementById("hours").disabled = true;
     document.getElementById("mins").disabled = true;
     document.getElementById("secs").disabled = true;
+    disableAllTemplateInputs();
+}
+
+function enableAllTemplateInputs() {
+    var content = "";
+    content += "Template mins:\n";
+    for (var i = 0; i < minTemplate.length; i++) {
+        content += `<a href="#" onclick="updateSettingTime(this)">${minTemplate[i]}</a>\n`;
+    }
+    document.getElementById("minTemplate").innerHTML = content;
+}
+
+function disableAllTemplateInputs() {
+    var content = "";
+    content += "Template mins:\n";
+    for (var i = 0; i < minTemplate.length; i++) {
+        content += `<a href="#">${minTemplate[i]}</a>\n`;
+    }
+    document.getElementById("minTemplate").innerHTML = content;
 }
 
 function getUI(secsNow, minsNow, hoursNow) {
@@ -76,4 +101,8 @@ function handleKeyPressInInput(event) {
     if (event.keyCode == 13) {
         startOrStop();
     }
+}
+
+function updateSettingTime(clickedObject) {
+    document.getElementById("mins").value = parseInt(clickedObject.innerText);
 }
