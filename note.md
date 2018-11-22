@@ -7,3 +7,4 @@ a countdown page:
 - ✓ disable the inputs while counting
 - ✓ pressing enter in the input to start
 - ✓ mins template
+- ✓ blinking after finished downcounting

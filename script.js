@@ -1,8 +1,11 @@
-var isCounting = false;
+var isCountingOrAlarming = false;
 var interval = null;
 var totalSecs = 0;
 var audio = new Audio('Alarm-tone.mp3');
 var minTemplate = [10, 15, 30, 45];
+var blinkingInterval = null;
+var blinkingFlag = 0;
+var isBlinking = true;
 
 window.onload = function() {
     enableAllTemplateInputs();
@@ -58,6 +61,30 @@ function getUI(secsNow, minsNow, hoursNow) {
     return ui;
 }
 
+function doBlinking() {
+    isBlinking = true;
+    blinkingInterval = setInterval(function() {
+        if (blinkingFlag == 0) {
+            blinkingFlag = 1;
+            document.getElementById("ui").innerText = "--:--"
+            document.title = "--:--";
+        }
+        else {
+            blinkingFlag = 0;
+            document.getElementById("ui").innerText = "00:00";
+            document.title = "00:00";
+        }
+    }, 500);
+}
+
+function stopBlinking() {
+    isBlinking = false;
+    clearInterval(blinkingInterval);
+    blinkingFlag == 0;
+    document.getElementById("ui").innerText = "00:00";
+    document.title = "Countdown";
+}
+
 function doTheIntervalJob() {
     totalSecs--;
     var hoursNow = parseInt(totalSecs / 60 / 60);
@@ -70,21 +97,26 @@ function doTheIntervalJob() {
     if (totalSecs == 0) {
         clearInterval(interval);
         playAlarm();
+        doBlinking();
     }
 }
 
 function startOrStop() {
-    if (isCounting) {
+    if (isCountingOrAlarming) {
+        // Stop counting or alarming
+        if (isBlinking)
+            stopBlinking();
         clearInterval(interval);
         stopAlarm();
         enableAllInputs();
         document.getElementById("mainBtn").innerText = "Start";
-        isCounting = false;
+        isCountingOrAlarming = false;
     }
     else {
+        // Start counting
         disableAllInputs();
         document.getElementById("mainBtn").innerText = "Stop";
-        isCounting = true;
+        isCountingOrAlarming = true;
         
         var hours = parseInt(document.getElementById("hours").value);
         var mins = parseInt(document.getElementById("mins").value);
