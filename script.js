@@ -148,7 +148,7 @@ function log(message) {
 
 function updateVolUI() {
     var vol = document.getElementById("volControl").value;
-    document.getElementById("curVol").innerText = `(${vol})`;
+    document.getElementById("curVol").innerText = `${vol}%`;
 }
 
 function changeVol() {
