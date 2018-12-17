@@ -16,6 +16,10 @@ window.onload = function() {
 }
 
 function playAlarm() {
+    if (!previewAudio.paused) {
+        previewAudio.pause();
+        previewAudio.currentTime = 0;
+    }
     audio.play();
 }
 
