@@ -2,6 +2,7 @@ var isCountingOrAlarming = false;
 var interval = null;
 var totalSecs = 0;
 var audio = new Audio('Alarm-tone.mp3');
+var previewAudio = new Audio('Alarm-tone.mp3');
 var minTemplate = [10, 15, 30, 45];
 var blinkingInterval = null;
 var blinkingFlag = 0;
@@ -9,10 +10,12 @@ var isBlinking = true;
 
 window.onload = function() {
     enableAllTemplateInputs();
+    updateVolUI();
+    audio.loop = true;
+    previewAudio.loop = true;
 }
 
 function playAlarm() {
-    audio.loop = true;
     audio.play();
 }
 
@@ -137,4 +140,28 @@ function handleKeyPressInInput(event) {
 
 function updateSettingTime(clickedObject) {
     document.getElementById("mins").value = parseInt(clickedObject.innerText);
+}
+
+function log(message) {
+    console.log(message);
+}
+
+function updateVolUI() {
+    var vol = document.getElementById("volControl").value;
+    document.getElementById("curVol").innerText = `(${vol})`;
+}
+
+function changeVol() {
+    var vol = document.getElementById("volControl").value;
+    audio.volume = parseInt(vol)/100;
+    previewAudio.volume = parseInt(vol)/100;
+    if (previewAudio.paused) {
+        previewAudio.play();
+    }
+    updateVolUI();
+}
+
+function stopPreviewing() {
+    previewAudio.pause();
+    previewAudio.currentTime = 0;
 }

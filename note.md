@@ -8,3 +8,4 @@ a countdown page:
 - ✓ pressing enter in the input to start
 - ✓ mins template
 - ✓ blinking after finished downcounting
+- ✓ volume adjustable: when user hold and drag the slider, volume changed and preview it, mute when user release

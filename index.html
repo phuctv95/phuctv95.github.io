@@ -31,6 +31,10 @@
     mins: <input type="number" id="mins" value="45" onkeypress="handleKeyPressInInput(event)">, 
     secs: <input type="number" id="secs" value="0" onkeypress="handleKeyPressInInput(event)">
     <div id="minTemplate"></div>
+    <p>
+      <input type="range" id="volControl" min="0" max="100" value="100" step="5" oninput="changeVol()" onmouseup="stopPreviewing()">
+      <span id="curVol">-</span>
+    </p>
     <button id="mainBtn" onclick="startOrStop()">Start</button>
     <p id="ui">00:00</p>
   </div>
