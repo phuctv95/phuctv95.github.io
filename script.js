@@ -155,7 +155,7 @@ function changeVol() {
     var vol = document.getElementById("volControl").value;
     audio.volume = parseInt(vol)/100;
     previewAudio.volume = parseInt(vol)/100;
-    if (previewAudio.paused) {
+    if (previewAudio.paused && audio.paused) {
         previewAudio.play();
     }
     updateVolUI();
