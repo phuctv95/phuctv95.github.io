@@ -1,0 +1,36 @@
+:root {
+    --normal-color: #555555;
+    --normal-shadow: #5555554d;
+    --primary-color: #0000ff;
+    --primary-shadow: #0000ff4d;
+}
+
+.btn {
+    padding: 5px;
+    background: white;
+    padding: 0.3em 0.7em;
+    margin-right: 0.5em;
+    border-radius: 3px;
+}
+.btn-normal {
+    border: 1px solid var(--normal-color);
+    color: var(--normal-color);
+    box-shadow: 0px 2px 3px 0px var(--normal-shadow);
+}
+.btn-primary {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0px 2px 3px 0px var(--primary-shadow);
+}
+.btn:hover {
+    cursor: pointer;
+}
+.btn-normal:active {
+    box-shadow: 0 0px 0px 0px var(--normal-shadow);
+}
+.btn-primary:active {
+    box-shadow: 0 0px 0px 0px var(--primary-shadow);
+}
+.btn::-moz-focus-inner {
+    border: none;
+}
