@@ -17,3 +17,8 @@
     color: #555;
     border-radius: 3px;
 }
+.card textarea {
+    min-width: 100%; min-height: 10em;
+    background: transparent;
+    border: none;
+}
