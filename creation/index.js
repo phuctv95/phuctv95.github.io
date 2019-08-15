@@ -25,7 +25,7 @@ function setHeaderToMaximize() {
 
     ele = document.querySelector('.header-content');
     ele.style.fontSize = headerHeight + 'em';
-    ele.style.background = 'linear-gradient(180deg, #fff494, #8aff9a, #4f93ff)';
+    ele.style.background = 'linear-gradient(45deg, #fff494, #8aff9a, #4f93ff)';
     ele.style.backgroundClip = 'text';
     ele.style.color = 'transparent';
 }

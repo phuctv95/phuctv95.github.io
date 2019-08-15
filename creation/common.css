@@ -11,7 +11,7 @@
     font-weight: bold;
     font-family: 'Nanum Pen', 'Schoolbell', cursive, Ubuntu;
     font-size: 4em;
-    background: linear-gradient(180deg, #fff494, #8aff9a, #4f93ff);
+    background: linear-gradient(45deg, #fff494, #8aff9a, #4f93ff);
     background-clip: text;
     color: transparent;
     transition: font-size 0.3s, color 0.3s;
