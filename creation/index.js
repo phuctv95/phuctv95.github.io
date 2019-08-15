@@ -7,17 +7,27 @@ function getVertScrollPos() {
 }
 
 function setHeaderToMinimize() {
-    let ele = document.querySelector('.header-content');
-    ele.style.fontSize = '1em';
-    ele = document.querySelector('.header');
+    let ele = document.querySelector('.header');
     ele.style.boxShadow = '0px 2px 2px 0px rgba(0,0,0,0.1)';
+    ele.style.background = 'linear-gradient(45deg, #fff494, #8aff9a, #4f93ff)';
+
+    ele = document.querySelector('.header-content');
+    ele.style.fontSize = '1em';
+    ele.style.background = 'transparent';
+    ele.style.backgroundClip = 'content-box';
+    ele.style.color = 'black';
 }
 
 function setHeaderToMaximize() {
-    let ele = document.querySelector('.header-content');
-    ele.style.fontSize = headerHeight + 'em';
-    ele = document.querySelector('.header');
+    let ele = document.querySelector('.header');
     ele.style.boxShadow = 'none';
+    ele.style.background = 'white';
+
+    ele = document.querySelector('.header-content');
+    ele.style.fontSize = headerHeight + 'em';
+    ele.style.background = 'linear-gradient(180deg, #fff494, #8aff9a, #4f93ff)';
+    ele.style.backgroundClip = 'text';
+    ele.style.color = 'transparent';
 }
 
 window.onscroll = function() {
