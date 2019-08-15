@@ -3,7 +3,9 @@
 }
 
 .card {
-    width: 30em; height: 10em;
+    display: inline-block;
+    min-width: 30em;
+    min-height: 10em;
     margin: 10px 0px;
     background:
         linear-gradient(60deg, transparent 90%, rgba(255, 0, 255, 0.1) 90%),
