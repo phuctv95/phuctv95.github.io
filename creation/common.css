@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    margin: 0px -8px 0 -8px;
+    top: 0px;
+    padding-left: 8px;
+    background: white;
+    width: 100%;
+}
+.header-content {
+    display: inline;
+    font-weight: bold;
+    font-family: 'Nanum Pen', 'Schoolbell', cursive, Ubuntu;
+    font-size: 4em;
+    color: transparent;
+    background: linear-gradient(180deg, #fff494, #56ff6c, #002f7a);
+    background-clip: text;
+    transition: font-size 0.3s;
+}

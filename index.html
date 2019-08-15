@@ -1,44 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <link rel="shortcut icon" href="favicon.ico" />
-  <title>Countdown</title>
-
-  <script src="script.js"></script>
-
-  <style type="text/css">
-    input[type=number] {
-      width: 3em;
-    }
-    #ui {
-      color: green;
-      font-size: 50px;
-    }
-    .body {
-      text-align: center;
-      margin-top: 50px;
-    }
-  </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
-
-
 <body>
-
-  <div class="body">
-    Hours: <input type="number" id="hours" value="0" onkeypress="handleKeyPressInInput(event)">, 
-    mins: <input type="number" id="mins" value="45" onkeypress="handleKeyPressInInput(event)">, 
-    secs: <input type="number" id="secs" value="0" onkeypress="handleKeyPressInInput(event)">
-    <div id="minTemplate"></div>
-    <p>
-      <input type="range" id="volControl" min="0" max="100" value="100" step="5" oninput="changeVol()" onmouseup="stopPreviewing()">
-      <span id="curVol">-</span>
-    </p>
-    <button id="mainBtn" onclick="startOrStop()">Start</button>
-    <p id="ui">00:00</p>
-  </div>
-
+    <div id="header"></div>
+    <script>
+        $('#header').load('shared/header.html');
+    </script>
 </body>
-
 </html>
