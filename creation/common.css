@@ -3,7 +3,7 @@
     margin: 0px -8px 0 -8px;
     top: 0px;
     padding-left: 8px;
-    background: white;
+    background: transparent;
     width: 100%;
 }
 .header-content {
@@ -13,6 +13,7 @@
     font-size: 4em;
     background: linear-gradient(45deg, #fff494, #8aff9a, #4f93ff);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     transition: font-size 0.3s, color 0.3s;
 }
