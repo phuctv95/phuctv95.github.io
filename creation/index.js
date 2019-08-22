@@ -9,7 +9,7 @@ function getVertScrollPos() {
 function setHeaderToMinimize() {
     let ele = document.querySelector('.header');
     ele.style.boxShadow = '0px 2px 2px 0px rgba(0,0,0,0.1)';
-    ele.style.background = 'linear-gradient(45deg, #fff494, #8aff9a, #4f93ff)';
+    ele.style.opacity = '1.0';
 
     ele = document.querySelector('.header-content');
     ele.style.fontSize = '1em';
@@ -21,7 +21,7 @@ function setHeaderToMinimize() {
 function setHeaderToMaximize() {
     let ele = document.querySelector('.header');
     ele.style.boxShadow = 'none';
-    ele.style.background = 'transparent';
+    ele.style.opacity = '0.0';
 
     ele = document.querySelector('.header-content');
     ele.style.fontSize = headerHeight + 'em';

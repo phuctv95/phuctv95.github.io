@@ -1,0 +1,17 @@
+body {
+    background: gray;
+}
+
+.f-button {
+    width: 300px; height: 140px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 1px;
+    background: transparent;
+}
+.f-button > div {
+    height: 100%;
+    text-align: center;
+    border-radius: inherit;
+    background: transparent;
+}

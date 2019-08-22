@@ -12,6 +12,26 @@
 <body>
     <div class="header"><div class="header-content">Creative Place</div></div>
     <div id="status"></div>
+    <div id="test" onclick="test()" style="
+        width: 5em; height: 5em;
+        background: linear-gradient(blue, green);
+        opacity: 1.0;
+        transition: opacity 1s;
+    ">
+        <div style="width: 3em; height: 3em; background: greenyellow; opacity: 1.0; position: fixed;"></div>
+    </div>
+    <script>
+        var flag = true;
+        function test() {
+            let ele = document.querySelector('#test');
+            if (flag) {
+                ele.style.opacity = '0.0';
+            } else {
+                ele.style.opacity = '1.0';
+            }
+            flag = !flag;
+        }
+    </script>
     <div class="card">John Mayer</div><br>
     <div class="card"><textarea placeholder="Type here..."></textarea></div><br>
     <button class="btn btn-primary">Save</button>
@@ -20,16 +40,6 @@
     <div class="card">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/mQ055hHdxbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quod est, a facere exercitationem accusamus voluptatibus ipsam reprehenderit voluptate, beatae perferendis, numquam quis. Vitae quas aspernatur laudantium expedita non incidunt!</p>
 
     <script src="index.js"></script>
 </body>
