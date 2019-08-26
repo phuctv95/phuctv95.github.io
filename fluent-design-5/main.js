@@ -11,9 +11,6 @@ function main() {
 }
 
 function init() {
-    for (const ele of fBtnEles) {
-        ele.innerHTML = `<div class="f-btn-content">${ele.innerHTML}</div>`;
-    }
 }
 
 function onWindowMouseMove(eve) {
@@ -29,7 +26,7 @@ function onWindowMouseMove(eve) {
         let localMouseX = eve.pageX - ele.offsetLeft;
         let localMouseY = eve.pageY - ele.offsetTop;
         message += `\ncalculated local=(${localMouseX}, ${localMouseY})`;
-        ele.style.background = `radial-gradient(circle at ${localMouseX}px ${localMouseY}px, #eee 0px, transparent 100px)`;
+        ele.style.background = `radial-gradient(circle at ${localMouseX}px ${localMouseY}px, #f1f1f1 0px, transparent 100px)`;
     }
     
     logEle.innerText = message;
