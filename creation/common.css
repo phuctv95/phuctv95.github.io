@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    margin: 0px -8px 0 -8px;
+    top: 0px;
+    padding-left: 8px;
+    background: linear-gradient(45deg, #fff494, #8aff9a, #4f93ff);
+    opacity: 0.0;
+    width: 100%;
+}
+.header-content {
+    display: inline;
+    font-weight: bold;
+    font-family: 'Nanum Pen', 'Schoolbell', cursive, Ubuntu;
+    font-size: 4em;
+    background: linear-gradient(45deg, #fff494, #8aff9a, #4f93ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: font-size 0.3s, color 0.3s;
+    opacity: 1.0;
+}

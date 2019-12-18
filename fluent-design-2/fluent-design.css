@@ -1,0 +1,9 @@
+#log {
+    white-space: pre;
+}
+.f-button {
+    width: 200px;
+    height: 200px;
+    background: #aaa;
+    border: 6px solid transparent;
+}

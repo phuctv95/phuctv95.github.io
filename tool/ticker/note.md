@@ -1,0 +1,11 @@
+a countdown page:
+- ✓ show updated time on page 
+- ✓ show updated time on title
+- ✓ play a sound on the end
+- ✓ stop also the sound
+- ✓ add seconds
+- ✓ disable the inputs while counting
+- ✓ pressing enter in the input to start
+- ✓ mins template
+- ✓ blinking after finished downcounting
+- ✓ volume adjustable: when user hold and drag the slider, volume changed and preview it, mute when user release
