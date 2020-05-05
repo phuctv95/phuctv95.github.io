@@ -1,0 +1,4 @@
+<a href="" *ngFor="let item of items; let i = index"
+    class="header-item" appPosition [positionLeft]="(i * 100 + 10) + 'px'">
+    {{item.text}}
+</a>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeaderItem } from './model/header-item';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+
+  headerItems = [
+    { text: 'Home' },
+    { text: 'About' }
+  ] as HeaderItem[];
 }
