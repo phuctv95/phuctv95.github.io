@@ -1,4 +1,9 @@
-<a href="" *ngFor="let item of items; let i = index"
-    class="header-item" appPosition [positionLeft]="(i * 100 + 10) + 'px'">
-    {{item.text}}
-</a>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <nav class="d-flex justify-content-center">
+                <a *ngFor="let item of items" routerLink="{{item.href}}">{{item.text}}</a>
+            </nav>
+        </div>
+    </div>
+</div>

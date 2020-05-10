@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row no-gutters">
+        <div class="col-12 col-sm-6 col-md-4" *ngFor="let post of posts">
+            <div class="post">
+                <div class="title">{{post.title}}</div>
+                <hr>
+                <div class="summary">{{post.summary}}</div>
+                <hr>
+                <div class="date">Posted on: {{post.createdDate ? post.createdDate.toLocaleTimeString() : ''}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -10,4 +10,5 @@
     + some fun (shapes?) perpective scroll
 - [ ] store in json
 - [ ] store as markdown
+- [ ] routing: `/posts/:id`
 - [ ] use a lib to generate content

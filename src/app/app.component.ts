@@ -7,10 +7,11 @@ import { HeaderItem } from './model/header-item';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'blog';
+  title = 'my blog';
 
   headerItems = [
-    { text: 'Home' },
-    { text: 'About' }
+    { text: 'Home', href: '' },
+    { text: 'Posts', href: '/posts' },
+    { text: 'About', href: '/about' }
   ] as HeaderItem[];
 }
