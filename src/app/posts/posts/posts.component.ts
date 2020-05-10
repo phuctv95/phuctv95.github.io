@@ -24,7 +24,7 @@ export class PostsComponent implements OnInit {
 
   initPostSummaries(posts: Post[]): void {
     posts.forEach(p => {
-      p.summary = p.body.substring(0, p.body.indexOf('.') + 1) + '...';
+      p.thumbnail = '/assets/imgs/photo.png';
       p.createdDate = new Date();
     });
   }
