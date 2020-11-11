@@ -7,6 +7,7 @@ import { BodyComponent } from './body/body.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PostListComponent } from './post-list/post-list.component';
 import { PostComponent } from './post/post.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 // Routing: list post, read a post
 
@@ -20,7 +21,8 @@ import { PostComponent } from './post/post.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    MarkdownModule.forRoot(),
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
