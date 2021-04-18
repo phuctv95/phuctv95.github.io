@@ -1,4 +1,4 @@
-import { Post } from './model/post';
+import { Post } from './modules/main/models/post';
 
 export const Posts: Post[] = [
     {

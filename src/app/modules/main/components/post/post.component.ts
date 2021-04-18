@@ -1,7 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Post } from '../model/post';
-import { Posts } from '../posts';
+import { Post } from '../../models/post';
+import { Posts } from '../../../../posts';
 
 @Component({
   selector: 'app-post',

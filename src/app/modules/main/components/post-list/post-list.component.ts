@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Posts } from '../posts';
-import { Post } from '../model/post';
+import { Posts } from '../../../../posts';
+import { Post } from '../../models/post';
 
 @Component({
   selector: 'app-post-list',
