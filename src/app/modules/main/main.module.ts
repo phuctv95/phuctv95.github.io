@@ -7,6 +7,7 @@ import { HeaderComponent } from 'src/app/modules/main/components/header/header.c
 import { BodyComponent } from 'src/app/modules/main/components/body/body.component';
 import { PostListComponent } from 'src/app/modules/main/components/post-list/post-list.component';
 import { PostComponent } from 'src/app/modules/main/components/post/post.component';
+import { StartPageComponent } from './components/start-page/start-page.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { PostComponent } from 'src/app/modules/main/components/post/post.compone
     HeaderComponent,
     BodyComponent,
     PostListComponent,
-    PostComponent
+    PostComponent,
+    StartPageComponent
   ],
   imports: [
     CommonModule,
